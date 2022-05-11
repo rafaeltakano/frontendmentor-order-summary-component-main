@@ -1,0 +1,125 @@
+@forward 'globals';
+@forward 'reset';
+
+body {
+  background-image: url('../../images/pattern-background-mobile.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: 375px) {
+    background-image: url('../../images/pattern-background-desktop.svg');
+  }
+}
+
+a {
+  color: var(--primary-bright-blue);
+  font-weight: var(--font-weight-700);
+
+  &:active {
+    filter: brightness(2);
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20vh;
+}
+
+.payment-card {
+  background-color: var(--color-white);
+  border-radius: 1rem;
+  max-width: 22rem;
+  text-align: center;
+
+  &__img {
+    margin-bottom: 1.75rem;
+    width: 100%;
+
+    img {
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    color: var(--neutral-dark-blue);
+    margin-bottom: 1.5rem;
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: var(--font-weight-900);
+    }
+  }
+
+  &__text {
+    margin-bottom: 1.5rem;
+    padding: 0 1.5rem;
+  }
+
+  &__plan {
+    margin-bottom: 1.5rem;
+    padding: 0 1.5rem;
+  }
+
+  &__proceed-payment {
+    margin-bottom: 1.5rem;
+    padding: 0 1.5rem;
+  }
+
+  &__cancel-order {
+    font-weight: var(--font-weight-700);
+    margin-bottom: 1.75rem;
+
+    a {
+      color: var(--neutral-desaturated-blue);
+      text-decoration: none;
+
+      &:active {
+        color: var(--neutral-dark-blue);
+        filter: none;
+      }
+    }
+  }
+}
+
+.plan {
+  background-color: var(--neutral-very-pale-blue);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.75rem 0 0.5rem;
+
+  &__details {
+    &__title {
+      color: var(--neutral-dark-blue);
+      font-weight: var(--font-weight-700);
+    }
+  }
+}
+
+.btn {
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-700);
+  padding: 1rem;
+  width: 100%;
+
+  &:active {
+    filter: brightness(2);
+
+    p {
+      filter: brightness(0.5);
+    }
+  }
+
+  &.btn--purple {
+    color: var(--color-white);
+    background-color: var(--primary-bright-blue);
+  }
+}
