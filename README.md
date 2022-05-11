@@ -22,7 +22,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ### Links
 
-- Solution URL: [https://rafaeltakano.github.io/frontendmentor-xxxx-component-main/]()
+- Solution URL: [https://rafaeltakano.github.io/frontendmentor-order-summary-component-main/](https://rafaeltakano.github.io/frontendmentor-order-summary-component-main/)
 
 ## My process
 
