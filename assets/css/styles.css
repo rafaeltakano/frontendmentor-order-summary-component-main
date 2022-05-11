@@ -136,7 +136,7 @@ a:active {
 .btn:active {
   filter: brightness(2);
 }
-.btn:active p {
+.btn:active .btn__text {
   filter: brightness(0.5);
 }
 .btn.btn--purple {

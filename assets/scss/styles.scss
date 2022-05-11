@@ -113,7 +113,7 @@ a {
   &:active {
     filter: brightness(2);
 
-    p {
+    .btn__text {
       filter: brightness(0.5);
     }
   }
